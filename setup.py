@@ -1,12 +1,1 @@
-install_requires=[
-        "aws-cdk.aws_iam",
-        "aws-cdk.aws_sqs",
-        "aws-cdk.aws_dynamodb",
-        "aws-cdk.aws_events",
-        "aws-cdk.aws_events_targets",
-        "aws-cdk.aws_lambda",
-        "aws-cdk.aws_lambda_event_sources",
-        "aws-cdk.aws_sns",
-        "aws-cdk.Duration",
-        "aws-cdk.Stack"
-        ]
+
