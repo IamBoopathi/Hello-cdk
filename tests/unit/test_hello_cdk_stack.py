@@ -3,6 +3,15 @@ import aws_cdk.assertions as assertions
 from hello_cdk.hello_cdk_stack import HelloCdkStack
 
 
+'''
+app = core.App()
+stack = core.Stack(app, "Stack", env=core.Environment(region="us-west-2"))
+queue = sqs.Queue(
+            stack, "HelloCdkQueue",
+            visibility_timeout=Duration.seconds(300),
+        )
+'''
+
 def test_sqs_queue_created():
     app = core.App()
     stack = HelloCdkStack(app, "hello-cdk")
@@ -19,3 +28,5 @@ def test_sns_topic_created():
     template = assertions.Template.from_stack(stack)
 
     template.resource_count_is("AWS::SNS::Topic", 1)
+
+
